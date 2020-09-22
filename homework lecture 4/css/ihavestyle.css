@@ -1,6 +1,6 @@
 p {
     color: #00ffff;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
 }
 form {
     color: #138f4b;
@@ -17,3 +17,5 @@ h1, h2, h3, h4, h5{
     color: #ff05ee;
     font-family: serif;
 }
+th{font-weight:bold;}
+td{font-style: italic;}
