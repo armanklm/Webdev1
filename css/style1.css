@@ -1,0 +1,116 @@
+@media (min-width:1280px){
+    #grid-container{
+        display: grid;
+        grid-template-areas: 'artikel2 artikel1 artikel3'
+                            'artikel5 artikel1 artikel3'
+                            'artikel5 artikel1 artikel4'
+                            'artikel5 artikel6 artikel6'
+    }
+    #grid-aside{
+        display: grid;
+        grid-template-areas:'product1 product2 product3';
+    }
+}
+@media (min-width:481px) and (max-width:1179px){
+    #grid-container{
+        display: grid;
+        grid-template-areas: 'artikel1 artikel2'
+                            'artikel3 artikel2'
+                            'artikel3 artikel5'
+                            'artikel6 artikel6';
+    }
+    
+    #grid-aside{
+        display: grid;
+        grid-template-areas:'product1 product2';
+    }
+    #artikel4, #product3{
+        display: none;
+    }
+
+}
+@media (max-width:480px){
+    #grid-container{
+        display: grid;
+        
+        grid-template-areas:'artikel5'
+                            'artikel3'
+                            'artikel2'
+                            'artikel1';
+    }
+    #artikel6, #artikel4 {
+        display: none;
+    }
+    #grid-aside{
+        display: grid;
+        grid-template-areas:'product1'
+                            'product2'
+                            'product3';
+    }
+    #logo {
+        display: none;
+    }
+    header > nav{
+        display: none;
+        grid-column: 2/2;
+        grid-row: 1/ span 2 ;
+    }
+    header > nav:hover{
+        display: block;
+        transition: 1s;
+    }
+    
+}
+
+header {
+    display: grid;
+    
+    
+}
+
+
+#logo {
+    width: 100%;
+    height: 50vw;
+
+}
+
+#product1{
+    grid-area: product1;
+}
+#product2{
+    grid-area: product2;
+}
+#product3{
+    grid-area: product3;
+}
+
+#artikel1{
+    grid-area: artikel1;
+    background-color: red;
+}
+#artikel2{
+    grid-area: artikel2;
+    background-color: blueviolet;
+
+}
+#artikel3{
+    grid-area: artikel3;
+    background-color:blue;
+
+}
+#artikel4{
+    grid-area: artikel4;
+    background-color: gray;
+
+}
+#artikel5{
+    grid-area: artikel5;
+    background-color: yellowgreen;
+
+}
+#artikel6{
+    grid-area: artikel6;
+    background-color: rosybrown;
+
+}
