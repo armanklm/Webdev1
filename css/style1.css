@@ -11,7 +11,7 @@
         grid-template-areas:'product1 product2 product3';
     }
 }
-@media (min-width:481px) and (max-width:1179px){
+@media (min-width:481px) and (max-width:1279px){
     #grid-container{
         display: grid;
         grid-template-areas: 'artikel1 artikel2'
@@ -47,33 +47,10 @@
                             'product2'
                             'product3';
     }
-    #logo {
-        display: none;
-    }
-    header > nav{
-        display: none;
-        grid-column: 2/2;
-        grid-row: 1/ span 2 ;
-    }
-    header > nav:hover{
-        display: block;
-        transition: 1s;
-    }
-    
-}
-
-header {
-    display: grid;
-    
     
 }
 
 
-#logo {
-    width: 100%;
-    height: 50vw;
-
-}
 
 #product1{
     grid-area: product1;
@@ -113,4 +90,7 @@ header {
     grid-area: artikel6;
     background-color: rosybrown;
 
+}
+#fleximage{
+    max-width: 100%;
 }
