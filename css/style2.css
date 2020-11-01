@@ -1,0 +1,104 @@
+tr >td:first-child {
+    background-color: #5a7e78;
+    font-weight: bolder;
+}
+.tableizer-firstrow{
+    background-color: #67a59b;
+    
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+  @media (min-width:1280px){
+  #grid-container{
+    display: grid;
+    grid-template-areas: 'arti1 arti1 arti1'
+                         'table1 table1 aside';
+  }
+ 
+  }
+  @media (min-width:481px) and (max-width:1279px){
+    #grid-container{
+        display: grid;
+        grid-template-areas: 'arti1 arti1 '
+                             'table1 table1 '
+                             'aside aside';
+      }
+      tr >td:nth-child(2), tr >th:nth-child(2) {
+        display: none;
+    }tr >td:nth-child(3), tr >th:nth-child(3) {
+        display: none;
+    }
+    tr >td:nth-child(4), tr >th:nth-child(4){
+        display: none;
+    }
+    #grid-aside{ 
+        
+        display: grid;
+        grid-template: 'product2 product3';
+    }
+    #product1{
+        grid-area: product1;
+        display: none;
+    }
+    #product2{
+        grid-area: product2;
+    }
+    #product3{
+        grid-area: product3;
+    }
+  }
+  @media (max-width:480px){
+    #grid-container{
+        display: grid;
+        grid-template-areas: 
+                             'table1 table1 '
+                             'aside aside';
+      }
+      #table {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+    tr >td:nth-child(2), tr >th:nth-child(2) {
+        display: none;
+    }tr >td:nth-child(3), tr >th:nth-child(3) {
+        display: none;
+    }
+    tr >td:nth-child(4), tr >th:nth-child(4){
+        display: none;
+    }
+    tr >td:nth-child(5), tr >th:nth-child(5){
+        display: none;
+    }
+    tr >td:nth-child(6), tr >th:nth-child(6){
+        display: none;
+    }
+    #artidata {
+        display: none;
+    }
+  }
+
+  #artidata {
+    grid-area: arti1;
+    border:5px solid lightblue;
+    padding: 20px 10px;
+    background: lightcyan;
+
+}
+#table {
+    grid-area: table1;
+}
+
+#grid-aside{ 
+    grid-area: aside;
+    max-width: 100%;
+    display: grid;
+}
+
+#fleximage{
+    
+   
+    max-width: 50%;
+      
+}
