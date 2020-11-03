@@ -63,3 +63,7 @@ ul{
      background-color: rgba(255, 170, 0, 0.5);
  }
 
+#main-foot{
+    float: left;
+    width: 100%;
+}

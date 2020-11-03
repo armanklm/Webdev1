@@ -1,0 +1,45 @@
+@media (min-width:1280px){
+    #grid-container{
+      display: grid;
+      grid-template-areas: 'contact contact contact'
+                           'form form aside';
+    }
+   
+    }
+
+    @media (min-width:481px) and (max-width:1279px){
+        #grid-container{
+            display: grid;
+            grid-template-areas: 'contact contact '
+                                 'form aside ';
+          }
+
+    }
+
+    @media (max-width:480px){
+        #grid-container{
+            display: grid;
+            grid-template-areas: 
+                                 'contact '
+                                 'form'
+                                 'aside';
+          }
+    }
+
+    #contactinf {
+        grid-area: contact;
+        background-color: lightblue;
+        border:2px  solid #445885 ;
+        border-radius: 5px;
+    }
+    #form{
+        grid-area: form;
+    }
+    #grid-aside{
+        grid-area: aside;
+        max-width: 100%;
+        display: grid;
+    }
+    #fleximage{
+        max-width: 100%;
+    }
