@@ -81,7 +81,10 @@ table, th, td {
 
   #artidata {
     grid-area: arti1;
-    border:5px solid lightblue;
+    
+    border-width: 5px;
+    border-style: double;
+    border: lightblue;
     padding: 20px 10px;
     background: lightcyan;
 
