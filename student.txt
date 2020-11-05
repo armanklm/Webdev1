@@ -1,0 +1,4 @@
+Student name: Arman Aghsami
+Student number: 672428
+Student class: INF1B
+URL student GitHub repository: https://github.com/armanklm/Webdev1  
