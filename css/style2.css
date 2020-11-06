@@ -11,7 +11,7 @@ table, th, td {
     border-collapse: collapse;
   }
   @media (min-width:1280px){
-  #grid-container{
+  #grid-container2{
     display: grid;
     grid-template-areas: 'arti1 arti1 arti1'
                          'table1 table1 aside';
@@ -19,7 +19,7 @@ table, th, td {
  
   }
   @media (min-width:481px) and (max-width:1279px){
-    #grid-container{
+    #grid-container2{
         display: grid;
         grid-template-areas: 'arti1 arti1 '
                              'table1 table1 '
@@ -33,24 +33,24 @@ table, th, td {
     tr >td:nth-child(4), tr >th:nth-child(4){
         display: none;
     }
-    #grid-aside{ 
+    #grid-aside2{ 
         
         display: grid;
-        grid-template: 'product2 product3';
+        grid-template: 'product2-2 product3-2';
     }
-    #product1{
-        grid-area: product1;
+    #product1-2{
+        grid-area: product1-2;
         display: none;
     }
-    #product2{
-        grid-area: product2;
+    #product2-2{
+        grid-area: product2-2;
     }
-    #product3{
-        grid-area: product3;
+    #product3-2{
+        grid-area: product3-2;
     }
   }
   @media (max-width:480px){
-    #grid-container{
+    #grid-container2{
         display: grid;
         grid-template-areas: 
                              'table1 table1 '
@@ -93,13 +93,13 @@ table, th, td {
     grid-area: table1;
 }
 
-#grid-aside{ 
+#grid-aside2{ 
     grid-area: aside;
     max-width: 100%;
     display: grid;
 }
 
-#fleximage{
+#fleximage3{
     
    
     max-width: 50%;

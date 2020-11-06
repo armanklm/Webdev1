@@ -1,28 +1,28 @@
 @media (min-width:1280px){
-    #grid-container{
+    #grid-container3{
       display: grid;
       grid-template-areas: 'contact contact contact'
-                           'form form aside';
+                           'form form aside3';
     }
    
     }
 
     @media (min-width:481px) and (max-width:1279px){
-        #grid-container{
+        #grid-container3{
             display: grid;
             grid-template-areas: 'contact contact '
-                                 'form aside ';
+                                 'form aside3 ';
           }
 
     }
 
     @media (max-width:480px){
-        #grid-container{
+        #grid-container3{
             display: grid;
             grid-template-areas: 
                                  'contact '
                                  'form'
-                                 'aside';
+                                 'aside3';
           }
     }
 
@@ -35,11 +35,11 @@
     #form{
         grid-area: form;
     }
-    #grid-aside{
-        grid-area: aside;
+    #grid-aside3{
+        grid-area: aside3;
         max-width: 100%;
         display: grid;
     }
-    #fleximage{
+    #fleximage3{
         max-width: 100%;
     }

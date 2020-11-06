@@ -1,3 +1,5 @@
+/*aanpassen grid-aside*/
+
 @media (min-width:1280px){
     #grid-container{
         display: grid;
@@ -91,6 +93,6 @@
     background-color: rosybrown;
 
 }
-#fleximage{
+#fleximage2{
     max-width: 100%;
 }

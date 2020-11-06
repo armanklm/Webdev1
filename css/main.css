@@ -1,0 +1,481 @@
+
+/*HEADER.css*/
+@media (max-width:480px){
+    
+    #logo {
+        display: none;
+    }
+    #main-header > nav{
+        display: block;
+        grid-column: 2/2;
+        grid-row: 1/ span 2 ;
+    }
+}
+
+#main-header {
+    display: grid;
+    background-color: #486b83;
+}
+
+h1, h2{
+    margin: 0px auto ;
+}
+
+nav{
+    background-color: #6893af;
+}
+#navbar > li{
+    display: block;
+    background-color: #d3d3d3;
+    margin:10px 0px;
+    width: 100%;
+    font-size: 18px;
+    
+    text-align: center;
+
+
+
+}
+
+#navbar{
+    padding: 0px;
+}
+#logo {
+    width: 100%;
+    height: 50vw;
+}
+
+ #foot1{
+     float: left;
+    
+ }
+ #foot2{
+    width: 200px;
+    height: 100px;
+     float: right;
+     color: #FFF;
+     background-color: rgba(255, 170, 0, 0.5);
+ }
+
+#main-foot{
+    float: left;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*------------------index.css-------------------------*/
+
+#homepagevideo{
+    width: 100%;
+    height: 400px;
+    margin: 0px auto;
+}
+
+#aside1 > header {
+    background-color: aqua;
+}
+
+.flexparent > article{
+    margin: 10px 0px;
+}
+
+@media (min-width:1280px){
+    #article1 >section ,#article2 >section , #article3 >section{
+        float: left;
+        width: 70%;
+    }
+
+        #fleximage{
+            float: right;
+        }
+        #aside1{
+            float: right;  
+            width: 200px;
+            height: 300px;
+            border: 10px #1e536b solid;
+            border-radius: 20px;
+            background: #809fd8;
+        }
+        .flexparent{
+            display: flex;
+            flex-wrap: wrap;
+            float: left;
+            width: 75%;
+        }
+        #fleximage{
+    
+            width: 30%;
+            height: 200px;
+              
+        }
+        #article1{
+            flex-basis: 100%;
+            flex-grow: 1;
+             order: 1;
+         }
+         #article2{
+             flex-basis: 100%;
+             order: 2;
+         }
+         #article3{
+             flex-basis: 100%;
+             order: 3;
+         }
+}
+@media (min-width:481px) and (max-width:1279px){
+    #article1 >section ,#article2 >section , #article3 >section{
+        float: right;
+        width: 50%;
+    }
+
+    .flexparent{
+        display: flex;
+        flex-wrap: wrap;
+        float: left;
+        width: 75%;
+    }
+        #fleximage{
+            float: left;
+        }
+        
+        
+        #aside1{
+            border: 10px #1e536b solid;
+            border-radius: 20px;
+            background: #809fd8;
+            order: 1;
+            flex-basis: 100%;
+            
+        }
+        #videoartikel{
+            flex-basis: 100%;
+            order: 2;
+        }
+
+        .flexparent2{
+            display: flex;
+            flex-wrap: wrap;
+            
+            width: 100%;
+        }
+        #fleximage{
+    
+            width: 50%;
+            max-height: 80%;
+              
+        }
+        #article1{
+            flex-basis: 100%;
+            flex-grow: 1;
+             order: 3;
+         }
+         #article2{
+             flex-basis: 100%;
+             order: 2;
+         }
+         #article3{
+             flex-basis: 100%;
+             order: 1;
+         }
+
+}
+@media (max-width:480px){
+    #aside1{
+          
+        border: 10px #1e536b solid;
+        border-radius: 20px;
+        background: #809fd8;
+      
+        
+        
+      }
+    #videoartikel{
+        display: none;
+    }
+    #article1{
+        flex-basis: 100%;
+        flex-grow: 1;
+         order: 3;
+     }
+     #article2{
+         flex-basis: 100%;
+         order: 2;
+     }
+     #article3{
+         flex-basis: 100%;
+         order: 1;
+     }
+     .flexparent{
+        display: flex;
+        flex-wrap: wrap;
+        float: left;
+        width: 100%;
+    }
+}
+/* KAN PROBLEEM OPLEVEREN KOMT VAN INDEX.css*/
+article + img {
+    max-width: 100%;
+}
+
+/* style1.css */
+
+#product1{
+    grid-area: product1;
+}
+#product2{
+    grid-area: product2;
+}
+#product3{
+    grid-area: product3;
+}
+
+#artikel1{
+    grid-area: artikel1;
+    background-color: red;
+}
+#artikel2{
+    grid-area: artikel2;
+    background-color: blueviolet;
+
+}
+#artikel3{
+    grid-area: artikel3;
+    background-color:blue;
+
+}
+#artikel4{
+    grid-area: artikel4;
+    background-color: gray;
+
+}
+#artikel5{
+    grid-area: artikel5;
+    background-color: yellowgreen;
+
+}
+#artikel6{
+    grid-area: artikel6;
+    background-color: rosybrown;
+
+}
+#fleximage2{
+    max-width: 100%;
+}
+
+/*aanpassen grid-aside*/
+
+@media (min-width:1280px){
+    #grid-container{
+        display: grid;
+        grid-template-areas: 'artikel2 artikel1 artikel3'
+                            'artikel5 artikel1 artikel3'
+                            'artikel5 artikel1 artikel4'
+                            'artikel5 artikel6 artikel6'
+    }
+    #grid-aside{
+        display: grid;
+        grid-template-areas:'product1 product2 product3';
+    }
+}
+@media (min-width:481px) and (max-width:1279px){
+    #grid-container{
+        display: grid;
+        grid-template-areas: 'artikel1 artikel2'
+                            'artikel3 artikel2'
+                            'artikel3 artikel5'
+                            'artikel6 artikel6';
+    }
+    
+    #grid-aside{
+        display: grid;
+        grid-template-areas:'product1 product2';
+    }
+    #artikel4, #product3{
+        display: none;
+    }
+
+}
+@media (max-width:480px){
+    #grid-container{
+        display: grid;
+        
+        grid-template-areas:'artikel5'
+                            'artikel3'
+                            'artikel2'
+                            'artikel1';
+    }
+    #artikel6, #artikel4 {
+        display: none;
+    }
+    #grid-aside{
+        display: grid;
+        grid-template-areas:'product1'
+                            'product2'
+                            'product3';
+    }
+    
+}
+
+/*Style2.css eusolar.html*/
+tr >td:first-child {
+    background-color: #5a7e78;
+    font-weight: bolder;
+}
+.tableizer-firstrow{
+    background-color: #67a59b;
+    
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+  @media (min-width:1280px){
+  #grid-container2{
+    display: grid;
+    grid-template-areas: 'arti1 arti1 arti1'
+                         'table1 table1 aside';
+  }
+ 
+  }
+  @media (min-width:481px) and (max-width:1279px){
+    #grid-container2{
+        display: grid;
+        grid-template-areas: 'arti1 arti1 '
+                             'table1 table1 '
+                             'aside aside';
+      }
+      tr >td:nth-child(2), tr >th:nth-child(2) {
+        display: none;
+    }tr >td:nth-child(3), tr >th:nth-child(3) {
+        display: none;
+    }
+    tr >td:nth-child(4), tr >th:nth-child(4){
+        display: none;
+    }
+    #grid-aside2{ 
+        
+        display: grid;
+        grid-template: 'product2-2 product3-2';
+    }
+    #product1-2{
+        grid-area: product1-2;
+        display: none;
+    }
+    #product2-2{
+        grid-area: product2-2;
+    }
+    #product3-2{
+        grid-area: product3-2;
+    }
+  }
+  @media (max-width:480px){
+    #grid-container2{
+        display: grid;
+        grid-template-areas: 
+                             'table1 table1 '
+                             'aside aside';
+      }
+      #table {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+    tr >td:nth-child(2), tr >th:nth-child(2) {
+        display: none;
+    }tr >td:nth-child(3), tr >th:nth-child(3) {
+        display: none;
+    }
+    tr >td:nth-child(4), tr >th:nth-child(4){
+        display: none;
+    }
+    tr >td:nth-child(5), tr >th:nth-child(5){
+        display: none;
+    }
+    tr >td:nth-child(6), tr >th:nth-child(6){
+        display: none;
+    }
+    #artidata {
+        display: none;
+    }
+  }
+
+  #artidata {
+    grid-area: arti1;
+    
+    border-width: 5px;
+    border-style: double;
+    border: lightblue;
+    padding: 20px 10px;
+    background: lightcyan;
+
+}
+#table {
+    grid-area: table1;
+}
+
+#grid-aside2{ 
+    grid-area: aside;
+    max-width: 100%;
+    display: grid;
+}
+
+#fleximage3{
+    
+   
+    max-width: 50%;
+      
+}
+
+
+/* Style3.css */
+@media (min-width:1280px){
+    #grid-container3{
+      display: grid;
+      grid-template-areas: 'contact contact contact'
+                           'form form aside3';
+    }
+   
+    }
+
+    @media (min-width:481px) and (max-width:1279px){
+        #grid-container3{
+            display: grid;
+            grid-template-areas: 'contact contact '
+                                 'form aside3 ';
+          }
+
+    }
+
+    @media (max-width:480px){
+        #grid-container3{
+            display: grid;
+            grid-template-areas: 
+                                 'contact '
+                                 'form'
+                                 'aside3';
+          }
+    }
+
+    #contactinf {
+        grid-area: contact;
+        background-color: lightblue;
+        border:2px  solid #445885 ;
+        border-radius: 5px;
+    }
+    #form{
+        grid-area: form;
+    }
+    #grid-aside3{
+        grid-area: aside3;
+        max-width: 100%;
+        display: grid;
+    }
+    #fleximage3{
+        max-width: 100%;
+    }
